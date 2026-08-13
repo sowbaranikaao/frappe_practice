@@ -1,0 +1,14 @@
+# Ignore Frappe framework apps
+frappe/
+erpnext/
+hrms/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Bench artifacts
+*.log
