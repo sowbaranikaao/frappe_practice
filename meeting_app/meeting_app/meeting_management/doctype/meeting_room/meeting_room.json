@@ -1,0 +1,54 @@
+{
+  "doctype": "DocType",
+  "name": "Meeting Room",
+  "module": "Meeting Management",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 1,
+  "track_changes": 1,
+  "autoname": "field:room_name",
+  "fields": [
+    {
+      "fieldname": "room_name",
+      "label": "Room Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "capacity",
+      "label": "Capacity",
+      "fieldtype": "Int",
+      "reqd": 1
+    },
+    {
+      "fieldname": "floor",
+      "label": "Floor",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "section_break_1",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "room_type",
+      "label": "Room Type",
+      "fieldtype": "Select",
+      "options": "Small\nMedium\nLarge\nBoard Room\nTraining Room"
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": "1"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
