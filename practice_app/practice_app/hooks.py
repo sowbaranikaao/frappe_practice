@@ -4,11 +4,16 @@ app_publisher = "sowbaranikaa"
 app_description = "Practice app for learning frappe"
 app_email = "sowbaranikaa12@gmail.com"
 app_license = "mit"
-doc_events = {
-    "ToDo": {
-        "validate": "practice_app.api.custom_todo_validate"
-    }
+scheduler_events={
+	"daily":[
+		"practice_app.tasks.daily_maintenance"
+	]
 }
+#doc_events = {
+#    "ToDo": {
+#        "validate": "practice_app.api.custom_todo_validate"
+#    }
+#}
 # Apps
 # ------------------
 
