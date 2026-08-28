@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "MB-.####",
+ "creation": "2026-08-24 14:24:27.784671",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_7jzf",
+  "meeting_title",
+  "meeting_room",
+  "organizer",
+  "start_time",
+  "end_time",
+  "status",
+  "agenda",
+  "attendees"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7jzf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "meeting_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meeting Title",
+   "options": "Meeting Room",
+   "reqd": 1
+  },
+  {
+   "fieldname": "organizer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organizer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Approval\nApproved\nRejected\nCancelled\nCompleted"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Small Text",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Meeting Attendee"
+  },
+  {
+   "fieldname": "meeting_room",
+   "fieldtype": "Link",
+   "label": "Meeting Room",
+   "options": "Meeting Room"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-24 14:35:58.869404",
+ "modified_by": "Administrator",
+ "module": "Meeting Management",
+ "name": "Meeting Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

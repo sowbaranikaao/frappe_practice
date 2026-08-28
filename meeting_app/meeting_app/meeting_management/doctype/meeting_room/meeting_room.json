@@ -1,54 +1,85 @@
 {
-  "doctype": "DocType",
-  "name": "Meeting Room",
-  "module": "Meeting Management",
-  "custom": 0,
-  "istable": 0,
-  "editable_grid": 1,
-  "track_changes": 1,
-  "autoname": "field:room_name",
-  "fields": [
-    {
-      "fieldname": "room_name",
-      "label": "Room Name",
-      "fieldtype": "Data",
-      "reqd": 1
-    },
-    {
-      "fieldname": "capacity",
-      "label": "Capacity",
-      "fieldtype": "Int",
-      "reqd": 1
-    },
-    {
-      "fieldname": "floor",
-      "label": "Floor",
-      "fieldtype": "Int"
-    },
-    {
-      "fieldname": "section_break_1",
-      "fieldtype": "Section Break"
-    },
-    {
-      "fieldname": "room_type",
-      "label": "Room Type",
-      "fieldtype": "Select",
-      "options": "Small\nMedium\nLarge\nBoard Room\nTraining Room"
-    },
-    {
-      "fieldname": "is_active",
-      "label": "Is Active",
-      "fieldtype": "Check",
-      "default": "1"
-    }
-  ],
-  "permissions": [
-    {
-      "role": "System Manager",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1
-    }
-  ]
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "ROOM-.####",
+ "creation": "2026-08-24 13:08:47.260772",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "room_name",
+  "capacity",
+  "floor",
+  "section_break",
+  "room_type",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Capacity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Floor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "section break"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Select",
+   "label": "Room Type",
+   "options": "Conference Room\nBoard Room\nTraining Room\nDiscussion Room\nOther"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-24 13:18:38.811451",
+ "modified_by": "Administrator",
+ "module": "Meeting Management",
+ "name": "Meeting Room",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
 }
