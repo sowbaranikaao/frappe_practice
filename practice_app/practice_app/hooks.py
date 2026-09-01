@@ -9,11 +9,11 @@ scheduler_events={
 		"practice_app.tasks.daily_maintenance"
 	]
 }
-#doc_events = {
-#    "ToDo": {
-#        "validate": "practice_app.api.custom_todo_validate"
-#    }
-#}
+doc_events = {
+    "ToDo": {
+        "validate": "practice_app.hook_handlers.custom_todo_validate"
+    }
+}
 # Apps
 # ------------------
 
@@ -26,7 +26,7 @@ scheduler_events={
 # 		"logo": "/assets/practice_app/logo.png",
 # 		"title": "Practice app",
 # 		"route": "/practice_app",
-# 		"has_permission": "practice_app.api.permission.has_app_permission"
+# 		"has_permission": "practice_app.hook_handlers.has_app_permission"
 # 	}
 # ]
 
